@@ -1,0 +1,55 @@
+<!doctype html>
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Push Notification — Painel</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="Painel para gerenciar dispositivos e enviar notificações" />
+    <style>
+      /* small inline tweak to keep header compact on panel */
+      h1 { font-size:20px; }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Push Notification — Painel</h1>
+
+        <div class="card">
+            <label>Backend URL</label>
+            <input id="backendUrl" value="http://localhost:5069" />
+        </div>
+
+        <div class="card">
+            <label>Dispositivos</label>
+            <div class="device-controls">
+                <input id="newDeviceId" placeholder="ID do dispositivo (opcional)" />
+                <button id="addDeviceBtn">Adicionar</button>
+                <button id="createSimulatorBtn">Criar Simulador</button>
+            </div>
+            <ul id="devicesList" class="device-list"></ul>
+        </div>
+
+        <div class="card">
+            <label>Enviar Mensagem ao dispositivo selecionado</label>
+            <input id="messageInput" placeholder="Mensagem para enviar" />
+            <button id="sendBtn" disabled>Enviar</button>
+        </div>
+
+        <div class="card">
+            <h2>Log</h2>
+            <ul id="messages" class="messages"></ul>
+        </div>
+
+        <div class="card small">
+            <span id="status">Painel</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

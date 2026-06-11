@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "nArngsnDMaA=",
+  "success": true,
+  "projectFilePath": "C:\\MyStuff\\Importante\\Projetos\\projeto-push-notification\\PushNotificationBackEnd\\PushNotification.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.9\\microsoft.aspnetcore.openapi.10.0.9.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

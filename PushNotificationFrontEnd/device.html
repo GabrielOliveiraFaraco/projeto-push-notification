@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simulador de Dispositivo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Página que simula um dispositivo se conectando ao Hub" />
+</head>
+<body>
+  <div class="container">
+    <h1>Simulador de Dispositivo</h1>
+    <div class="card">
+      <label>Backend URL</label>
+      <input id="backendUrl" value="http://localhost:5069" />
+      <label>Device ID</label>
+      <input id="deviceId" placeholder="device-1" />
+      <button id="connectBtn">Conectar</button>
+      <button id="disconnectBtn" disabled>Desconectar</button>
+    </div>
+
+    <div class="card">
+      <h2>Mensagens recebidas</h2>
+      <div class="status"> <span id="pollTimer"></span> </div>
+      <ul id="messages" class="messages"></ul>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.12/signalr.min.js"></script>
+  <script src="device.js"></script>
+</body>
+</html>
